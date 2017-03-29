@@ -41,11 +41,13 @@ angular.module('questionnaireApp', ['ui.router'])
                     data : [
                         '1','2','3','4','5','6','7','8','9','10','11','12'
                     ]
-                }/*,*/
-                // {
-                //     type : 'category',
-                //     data : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-                // }
+                },
+                {
+                    type : 'category',
+                    data : [
+                        '1','2','3','4','5','6','7','8','9','10','11','12'
+                    ]
+                }
             ],
             yAxis : [
                 {
@@ -109,10 +111,11 @@ angular.module('questionnaireApp', ['ui.router'])
                 {
                     name: 'xxxx',
                     type: 'bar',
+                    xAxisIndex: 1,
                     yAxisIndex: 1,
-                    barMaxWidth:10,
+                    // barMaxWidth:10,
                     data: [0, 0, 0, 0, 0, 0, 11175.6, 11182.2, 0, 0, 0, 0],
-                    barWidth:2,
+                    // barWidth:2,
                     // barWidth : function(params){
 
                     //     // return 2;
